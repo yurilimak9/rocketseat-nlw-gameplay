@@ -1,23 +1,19 @@
 import React from "react";
-import {Text, View} from "react-native";
+import { Text, View } from "react-native";
 
-import {styles} from "./styles";
+import { styles } from "./styles";
 
 type ListHeaderProps = {
-    title: string;
-    subtitle: string;
-}
+  title: string;
+  subtitle: string;
+};
 
-export function ListHeader({title, subtitle}: ListHeaderProps) {
-    return (
-        <View style={styles.container}>
-            <Text style={styles.title}>
-                {title}
-            </Text>
+export function ListHeader({ title, subtitle }: ListHeaderProps) {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>{title}</Text>
 
-            <Text style={styles.subtitle}>
-                {subtitle}
-            </Text>
-        </View>
-    );
+      <Text style={styles.subtitle}>{subtitle}</Text>
+    </View>
+  );
 }
